@@ -32,7 +32,7 @@ $color-five: #F7F7F7;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4); 
+    background-color: rgba(0, 0, 0, 0.6); 
     z-index: 1;
   }
 
@@ -48,7 +48,6 @@ $color-five: #F7F7F7;
 
       .logo {
         position: absolute;
-        z-index: 999;
         top: 50px;
         left: 230px;
         color: $color-one;
@@ -69,7 +68,6 @@ $color-five: #F7F7F7;
     
       .navigation {
         position: absolute;
-        z-index: 999;
         top: 50px;
         right: 230px;
       
