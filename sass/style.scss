@@ -1,12 +1,13 @@
 /* Variables */
 
 $font-logo: "Rouge Script", fantasy;
-$font-menu-header: "Merriweather Sans", sans-serif;
-$color-one: #FED238;
+$font-menu-title: "Merriweather Sans", sans-serif;
+$font-subtitle: "Tempo Grunge", serif;
+$color-one: #fed238;
 $color-two: #fff;
 $color-three: #000;
-$color-four: #747370;
-$color-five: #F7F7F7;
+$color-four: #777;
+$color-five: #f7f7f7;
 
 /* Global */
 
@@ -81,7 +82,7 @@ $color-five: #F7F7F7;
             display: inline-block;
       
             a {
-              font-family: $font-menu-header !important;
+              font-family: $font-menu-title !important;
               text-decoration: none;
               color: $color-five;
               font-size: 1em;
@@ -107,7 +108,7 @@ $color-five: #F7F7F7;
 
     .subtitle {
       font-size: 3em;
-      font-family: "Tempo Grunge",serif;
+      font-family: $font-subtitle;
       color: $color-five;
       font-style: italic;
       text-transform: capitalize;
@@ -116,7 +117,7 @@ $color-five: #F7F7F7;
     
     .title {
       font-size: 4.5em;
-      font-family: $font-menu-header;
+      font-family: $font-menu-title;
       letter-spacing: 2px;
       font-weight: 900;
       color: $color-five;
@@ -136,7 +137,7 @@ $color-five: #F7F7F7;
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      font-family: $font-menu-header;
+      font-family: $font-menu-title;
       font-size: 1.1em;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -146,6 +147,71 @@ $color-five: #F7F7F7;
     }
   }
 }
+
+/* Services */
+
+.services {
+	.container {
+		padding: 120px 0 0;
+		text-align: center;
+
+		.titles {
+			padding: 0 0 80px;
+
+			.title {
+				font-family: $font-menu-title;
+				font-size: 3em;
+				text-transform: uppercase;
+				font-weight: 900;
+        padding: 0 0 10px;
+			}
+
+			.subtitle {
+				font-family: $font-subtitle;
+				font-style: italic;
+				color: $color-four;
+        font-weight: 300;
+			}
+		}
+
+		.boxes {
+			.box {
+        padding: 0 0 120px;
+
+				.box-icon {
+          padding: 0 0 20px;
+
+					i {
+						width: 70px;
+						height: 70px;
+						line-height: 70px;
+						border-radius: 50%;
+						border: $color-one 3px solid;
+						color: $color-one;
+						font-size: 2.2em;
+					}
+				}
+
+				.box-body {
+					.title {
+						padding: 0 0 15px;
+						font-size: 1.5em;
+						font-family: $font-menu-title;
+						font-weight: 900;
+					}
+
+					.caption {
+						color: $color-four;
+						font-size: 1.2em;
+            font-family: $font-subtitle;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 
 /* Media */
 
